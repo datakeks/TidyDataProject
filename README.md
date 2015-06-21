@@ -14,8 +14,9 @@ The project criteria outline that the script performs each of the the following 
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable - mean() and std() - for each activity and each subject
+
 ### Tidy Dataset Rationale
-For the two datasets (UCIHAR_mean_std_data.csv and UCIHAR_variable_avg_data.csv), the rationale behind this script was to create a "wide" tidy dataset. 
+For the two datasets (UCIHAR_mean_std_data.csv and UCIHAR_variable_avg_data.csv), the rationale behind this script was to create a wide tidy dataset so that is only one row for each observation of a subject doing an activity. This conforms to the tidy data guideline that each different observation of that variable should be in a different row. The wide form also conforms to tidy data guideline that each measured variable is in a column. 
 
 ### runanalysis.R Explanation
 **Assumptions**
