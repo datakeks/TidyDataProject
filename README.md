@@ -63,9 +63,9 @@ Many of the variable name abbreviations and components are more thoroughly expla
 
 **Create the first tidy dataset as a text file**
 While not one of the project's required steps, this step
-* uses write.csv() to create a CSV called UCIHAR_mean_std_data.csv
+* uses write.table() to create a UCIHAR_mean_std_data.txt
 
 **5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable - mean() and std() - for each activity and each subject**
 * converts the data to tbl class with tbl_df()
 * with piping to enhance readability, uses group_by() to group the tidy data into rows with the same values of activity and subject and uses summarise_each to apply the mean() function to each column
-* uses write.csv() to create a CSV called UCIHAR_variable_avg_data.csv
+* uses write.table() to create a UCIHAR_variable_avg_data.txt
