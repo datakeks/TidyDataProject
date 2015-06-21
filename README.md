@@ -22,11 +22,12 @@ For the two datasets (UCIHAR_mean_std_data.csv and UCIHAR_variable_avg_data.csv)
 **Assumptions**
 This script assumes the user has the necessary packages installed (dplyr).
 
-**0. Preparing the data**
-* load the necessary libraries
-* download the input files from the project mandated URL, unzips it, and sets the working directory
-* read in the .txt data for the training and test sets, the training and test labels, and the training and test subject
-* read in the .txt data for the features, then transposes the feature data and removes the featureid column, so that the feature measurements are formatted to be assigned as column names for their matching observations read in from the other .txt data sources in the next section of the code
+**Preparing the data**
+While not one of the project's required steps, this step
+* loads the necessary libraries
+* downloads the input files from the project mandated URL, unzips it, and sets the working directory
+* reads in the .txt data for the training and test sets, the training and test labels, and the training and test subject
+* reads in the .txt data for the features, then transposes the feature data and removes the featureid column, so that the feature measurements are formatted to be assigned as column names for their matching observations read in from the other .txt data sources in the next section of the code
 
 **1. Merges the training and the test sets to create one data set**
 * use rbind() to merge the training and test data into one feature set where each observation type has only one column and use colnames() to assign the transposed feature measurement descriptions as column names for their respective observations
